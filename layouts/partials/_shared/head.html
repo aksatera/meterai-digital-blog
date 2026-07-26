@@ -2,7 +2,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	{{ hugo.Generator }}
-	{{ with .Site.Params.logo }}
+	{{ with .Site.Params.favicon }}
 	<link rel="icon" href="{{ . | urlize | relURL }}">
 	{{ end }}
 	<title>{{ .Page.Title }} | {{ .Site.Title }}</title>
@@ -27,5 +27,4 @@
 	{{ $style := resources.Get . }}
 	<link rel="stylesheet" href="{{ $style.RelPermalink }}" integrity="{{ $style.Data.Integrity }}" crossorigin="anonymous" media="screen">
 	{{- end }}
-<script src="/auto-redirect.js"></script>
 </head>
