@@ -1,0 +1,31 @@
+{{ define "header"}}
+    {{- partial "_shared/navbar.html" . -}}
+{{ end }}
+
+{{ define "main" }}
+    <div class="main-content">
+        <header class="text-center">
+            <h1 class="index-title">{{ .Site.Params.index.title }}</h1>
+        </header>
+        <section class="text-center">
+            <h3 class="index-sub">{{ .Site.Params.index.subtitle }}</h3>
+        </section>
+    </div>
+    <div class="main-content">
+        <section class="recent-posts">
+            <div class="section-title">
+                <h2><span>Recent Posts</span></h2>
+            </div>
+            <div class="row listrecent">
+                {{ range first 6 (where .Site.RegularPages "Section" "posts") }}
+                    {{- partial "list-partials/postbox.html" . -}}
+                {{ end }}
+            </div>
+        </section>
+    </div>
+{{ end }}
+
+{{ define "footer" }}
+    {{- partial "_shared/jumbotron.html" . -}}
+    {{- partial "_shared/footer.html" . -}}
+{{ end }}
