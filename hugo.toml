@@ -7,21 +7,20 @@ copyright = 'PT Aksatera Teknologi Nusadipa'
 enableEmoji = true
 
 [params]
-  logo = "/images/logo.png"
+  logo = "/images/logo-meterai-digital.png"
   description = "Tutorial & Knowledge Base Meterai Digital"
+  favicon = "/favicon.ico"
 
 [params.author]
   name = "Tim Meterai Digital"
-  thumbnail = "/images/author.png"
+  thumbnail = "/images/logo-meterai-digital.png"
   description = "PT Aksatera Teknologi Nusadipa"
 
 [params.index]
+  picture = "/images/logo-meterai-digital.png"
   title = "Meterai Digital Blog"
   subtitle = "Tutorial & Panduan E-Meterai"
   alertbar = false
-  mdtext = '''
-Selamat datang di **Meterai Digital Blog** — tempatnya tutorial, panduan, dan knowledge base seputar E-Meterai di Indonesia.
-'''
 
 [params.social]
   github = "aksatera"
@@ -37,6 +36,6 @@ Selamat datang di **Meterai Digital Blog** — tempatnya tutorial, panduan, dan 
     url = "/"
 [[menu.main]]
     name = "Meterai Digital"
-    weight = 200
     identifier = "meterai"
+    weight = 200
     url = "https://meterai.digital"

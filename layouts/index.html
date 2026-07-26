@@ -1,34 +1,29 @@
-{{ define "header"}}
-    {{- partial "_shared/navbar.html" . -}}
-{{ end }}
-
 {{ define "main" }}
-    <div class="main-content">
-        <header class="text-center">
-            {{ with .Site.Params.index.picture }}
-                <img src="{{ . | urlize | relURL }}" class="rounded-circle text-center index-image">
-            {{ end }}
-            <h1 class="index-title">{{ .Site.Params.index.title }}</h1>
-        </header>
+<div class="main-content">
 
-        <section class="text-center">
-            {{ with .Site.Params.index.subtitle }}
-            <h3 class="index-sub">{{ . }}</h3>
-            {{ end }}
-            <a href="https://meterai.digital/payment-create" style="display:inline-block;background:#2563eb;color:white;padding:14px 32px;border-radius:8px;text-decoration:none;font-weight:bold;font-size:1.1em;margin:24px 0">Beli e-Meterai</a>
-            {{ with .Site.Params.index.mdtext }}
-            <div class="index-text">{{ . | markdownify }}</div>
-            {{ end }}
-        </section>
+  {{/* Hero Section */}}
+  <section class="hero-section text-center py-5" style="background: linear-gradient(135deg, #1a237e 0%, #283593 100%); color: white; margin: -30px -15px 30px; padding: 60px 20px !important;">
+    <div class="container">
+      <h1 style="font-size: 2.5rem; font-weight: 700; margin-bottom: 20px;">e-Meterai Digital Resmi & Aman</h1>
+      <p style="font-size: 1.2rem; max-width: 600px; margin: 0 auto 30px; opacity: 0.9;">
+        Platform resmi pembelian e-Meterai dari Peruri. Cepat, aman, dan terpercaya.
+      </p>
+      <a href="https://meterai.digital/payment-create" target="_blank" rel="noopener"
+         style="display: inline-block; padding: 14px 40px; background: #ff6f00; color: white; border-radius: 30px; text-decoration: none; font-weight: 600; font-size: 1.1rem; transition: all 0.3s;">
+        Beli e-Meterai
+      </a>
     </div>
-    {{- partial "_shared/social.html" . -}}
-    {{ if isset .Site.Params.index "alertbar" }}
-    	{{ if .Site.Params.index.alertbar }}
-            {{- partial "_shared/alertbar.html" . -}}
-        {{ end }}
-    {{ end }}
-{{end}}
+  </section>
 
-{{ define "footer" }}
-    {{- partial "_shared/footer.html" . -}}
-{{end}}
+  {{/* Recent Posts Section */}}
+  <div class="container">
+    <div class="row">
+      {{ range .Paginator.Pages }}
+        {{ partial "postbox" . }}
+      {{ end }}
+    </div>
+  </div>
+  {{ partial "pagination" . }}
+
+</div>
+{{ end }}
