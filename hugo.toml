@@ -1,10 +1,39 @@
 baseURL = 'https://blog.meterai.digital/'
-locale = 'id-ID'
+languageCode = 'id-ID'
 title = 'Meterai Digital Blog'
-theme = 'ananke'
+theme = 'mediumish-gohugo-theme'
+summaryLength = 25
+copyright = 'PT Aksatera Teknologi Nusadipa'
+enableEmoji = true
 
 [params]
+  logo = "/images/logo.png"
   description = "Tutorial & Knowledge Base Meterai Digital"
+
+[params.author]
+  name = "Tim Meterai Digital"
+  thumbnail = "/images/author.png"
+  description = "PT Aksatera Teknologi Nusadipa"
+
+[params.index]
+  title = "Meterai Digital Blog"
+  subtitle = "Tutorial & Panduan E-Meterai"
+  alertbar = false
+
+[params.social]
+  github = "aksatera"
 
 [markup.goldmark.renderer]
   unsafe = true
+
+## Main Menu
+[[menu.main]]
+    name = "Blog"
+    weight = 100
+    identifier = "blog"
+    url = "/"
+[[menu.main]]
+    name = "About"
+    identifier = "about"
+    weight = 200
+    url = "/about"
