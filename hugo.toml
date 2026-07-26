@@ -1,0 +1,10 @@
+baseURL = 'https://blog.meterai.digital/'
+locale = 'id-ID'
+title = 'Meterai Digital Blog'
+theme = 'ananke'
+
+[params]
+  description = "Tutorial & Knowledge Base Meterai Digital"
+
+[markup.goldmark.renderer]
+  unsafe = true
