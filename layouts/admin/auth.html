@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html><head><script>
+const params = new URLSearchParams(window.location.search);
+const code = params.get("code");
+if (code) {
+  fetch("/.netlify/functions/auth?code=" + code)
+    .then(r => r.text())
+    .then(t => { document.body.innerText = t; });
+} else {
+  document.body.innerText = "Auth redirect page";
+}
+</script></head><body></body></html>

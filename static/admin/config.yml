@@ -2,20 +2,29 @@ backend:
   name: github
   repo: aksatera/meterai-digital-blog
   branch: main
-  base_url: https://api.github.com
+  base_url: https://blog.meterai.digital
 
-media_folder: "static/images"
-public_folder: "/images"
+media_folder: static/images
+public_folder: /images
 
 collections:
   - name: "blog"
-    label: "Blog Post"
-    folder: "content/blog"
+    label: "Blog"
+    folder: "content/posts"
     create: true
     slug: "{{slug}}"
     fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Author", name: "author", widget: "string", default: "Tim Meterai Digital" }
-      - { label: "Tags", name: "tags", widget: "list", default: ["tutorial"] }
-      - { label: "Body", name: "body", widget: "markdown" }
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Author", name: "author", widget: "string", default: "Tim Meterai Digital"}
+      - {label: "Description", name: "description", widget: "text"}
+      - {label: "Tags", name: "tags", widget: "list", default: ["tutorial"]}
+      - {label: "Image", name: "image", widget: "image", required: false}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "pages"
+    label: "Pages"
+    folder: "content"
+    create: true
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Body", name: "body", widget: "markdown"}

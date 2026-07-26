@@ -1,10 +1,8 @@
-FROM klakegg/hugo:latest AS builder
-WORKDIR /src
-COPY . .
-RUN hugo --minify
-
 FROM nginx:alpine
-COPY --from=builder /src/public /usr/share/nginx/html
-COPY nginx.conf /etc/nginx/conf.d/default.conf
-EXPOSE 80
-CMD ["nginx", "-g", "daemon off;"]
+RUN apk add --no-cache python3
+COPY public /usr/share/nginx/html
+COPY deploy/nginx.conf /etc/nginx/conf.d/default.conf
+COPY proxy/server.py /proxy/server.py
+COPY deploy/entrypoint.sh /entrypoint.sh
+RUN chmod +x /entrypoint.sh
+CMD ["/entrypoint.sh"]
