@@ -20,8 +20,6 @@ enableEmoji = true
   subtitle = "Tutorial & Panduan E-Meterai"
   alertbar = false
   mdtext = '''
-<a href="https://meterai.digital/payment-create" style="display:inline-block;background:#2563eb;color:white;padding:14px 32px;border-radius:8px;text-decoration:none;font-weight:bold;font-size:1.1em">Beli e-Meterai</a>
-
 Selamat datang di **Meterai Digital Blog** — tempatnya tutorial, panduan, dan knowledge base seputar E-Meterai di Indonesia.
 '''
 

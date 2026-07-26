@@ -5,27 +5,30 @@
 {{ define "main" }}
     <div class="main-content">
         <header class="text-center">
+            {{ with .Site.Params.index.picture }}
+                <img src="{{ . | urlize | relURL }}" class="rounded-circle text-center index-image">
+            {{ end }}
             <h1 class="index-title">{{ .Site.Params.index.title }}</h1>
         </header>
+
         <section class="text-center">
-            <h3 class="index-sub">{{ .Site.Params.index.subtitle }}</h3>
+            {{ with .Site.Params.index.subtitle }}
+            <h3 class="index-sub">{{ . }}</h3>
+            {{ end }}
+            <a href="https://meterai.digital/payment-create" style="display:inline-block;background:#2563eb;color:white;padding:14px 32px;border-radius:8px;text-decoration:none;font-weight:bold;font-size:1.1em;margin:24px 0">Beli e-Meterai</a>
+            {{ with .Site.Params.index.mdtext }}
+            <div class="index-text">{{ . | markdownify }}</div>
+            {{ end }}
         </section>
     </div>
-    <div class="main-content">
-        <section class="recent-posts">
-            <div class="section-title">
-                <h2><span>Recent Posts</span></h2>
-            </div>
-            <div class="row listrecent">
-                {{ range first 6 (where .Site.RegularPages "Section" "posts") }}
-                    {{- partial "list-partials/postbox.html" . -}}
-                {{ end }}
-            </div>
-        </section>
-    </div>
-{{ end }}
+    {{- partial "_shared/social.html" . -}}
+    {{ if isset .Site.Params.index "alertbar" }}
+    	{{ if .Site.Params.index.alertbar }}
+            {{- partial "_shared/alertbar.html" . -}}
+        {{ end }}
+    {{ end }}
+{{end}}
 
 {{ define "footer" }}
-    {{- partial "_shared/jumbotron.html" . -}}
     {{- partial "_shared/footer.html" . -}}
-{{ end }}
+{{end}}
