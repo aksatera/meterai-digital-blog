@@ -10,10 +10,11 @@ enableEmoji = true
   logo = "/images/logo-meterai-digital.png"
   description = "Artikel dan Panduan"
   favicon = "/favicon.ico"
+  author_thumb = "https://avatars.githubusercontent.com/aksatera"
 
 [params.author]
   name = "Tim Meterai Digital"
-  thumbnail = "/images/logo-meterai-digital.png"
+  thumbnail = "https://avatars.githubusercontent.com/aksatera"
   description = "PT Aksatera Teknologi Nusadipa"
 
 [params.index]
