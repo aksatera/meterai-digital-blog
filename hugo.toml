@@ -8,7 +8,7 @@ enableEmoji = true
 
 [params]
   logo = "/images/logo-meterai-digital.png"
-  description = "Tutorial & Knowledge Base Meterai Digital"
+  description = "Artikel dan Panduan"
   favicon = "/favicon.ico"
 
 [params.author]

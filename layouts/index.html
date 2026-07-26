@@ -5,14 +5,11 @@
 {{ define "main" }}
     <div class="main-content">
         {{/* Hero Section */}}
-        <section class="text-center" style="background: linear-gradient(135deg, #1a237e 0%, #283593 100%); color: white; padding: 60px 20px; margin: -30px -15px 30px; border-radius: 0;">
-            <div class="container">
-                {{ with .Site.Params.index.picture }}
-                    <img src="{{ . | urlize | relURL }}" class="rounded-circle text-center index-image" style="max-width:150px;">
-                {{ end }}
-                <h1 class="index-title" style="color:white; font-size:2.2rem; font-weight:700;">e-Meterai Digital Resmi & Aman</h1>
-                <p style="font-size:1.1rem; margin:15px 0 25px; opacity:0.9;">Platform resmi pembelian e-Meterai dari Peruri. Cepat, aman, dan terpercaya.</p>
-                <a href="https://meterai.digital/payment-create" target="_blank" class="btn btn-warning btn-lg" style="font-weight:600; border-radius:30px; padding:12px 40px; color:white; background:#ff6f00; border:none;">Beli e-Meterai</a>
+        <section class="text-center" style="background: linear-gradient(135deg, #1a237e 0%, #283593 100%); color: white; padding: 70px 20px 60px; margin: -30px -15px 30px;">
+            <div class="container" style="max-width:700px;">
+                <h1 style="color:white; font-size:2.4rem; font-weight:700; margin-bottom:15px;">e-Meterai Digital Resmi &amp; Aman</h1>
+                <p style="font-size:1.15rem; margin:0 0 25px; opacity:0.9;">Platform resmi pembelian e-Meterai dari Peruri. Cepat, aman, dan terpercaya.</p>
+                <a href="https://meterai.digital/payment-create" target="_blank" class="btn btn-primary btn-pricing" style="font-weight:600; border-radius:30px; padding:12px 45px; font-size:1.05rem;">Beli e-Meterai</a>
             </div>
         </section>
 
@@ -23,7 +20,7 @@
                 <div class="col-md-4 mb-4">
                     <div class="card h-100">
                         <div class="card-body">
-                            <h5 class="card-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h5>
+                            <h5 class="card-title"><a href="{{ .Permalink }}" style="color:#1b84e7;">{{ .Title }}</a></h5>
                             <p class="card-text text-muted small">{{ .Summary | plainify | truncate 150 }}</p>
                         </div>
                         <div class="card-footer bg-white border-top-0">
