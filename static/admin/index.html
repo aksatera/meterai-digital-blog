@@ -3,9 +3,45 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Meterai Digital — Admin</title>
+  <title>Meterai Digital - Admin</title>
 </head>
 <body>
-  <script src="https://unpkg.com/netlify-cms@^2/dist/netlify-cms.js"></script>
+  <script src="https://unpkg.com/@sveltia/cms/dist/sveltia-cms.js"></script>
+  <script>
+    // Get basic auth username from nginx injected header (via subrequest)
+    const author = new URLSearchParams(window.location.search).get("author") || "Tim Meterai";
+    const token = new URLSearchParams(window.location.search).get("token") || "";
+    
+    CMS.init({
+      config: {
+        backend: {
+          name: "github",
+          repo: "aksatera/meterai-digital-blog",
+          branch: "main",
+          token: token
+        },
+        media_folder: "static/images",
+        public_folder: "/images",
+        collections: [
+          {
+            name: "blog",
+            label: "Blog Post",
+            folder: "content/blog",
+            create: true,
+            slug: "{{year}}-{{month}}-{{slug}}",
+            fields: [
+              { label: "Title", name: "title", widget: "string" },
+              { label: "Author", name: "author", widget: "string", default: author },
+              { label: "Description", name: "description", widget: "text" },
+              { label: "Tags", name: "tags", widget: "list", default: ["tutorial"] },
+              { label: "Publish Date", name: "date", widget: "datetime", default: "" },
+              { label: "Body", name: "body", widget: "markdown", default: "" }
+            ]
+          }
+        ],
+        site_url: "https://blog.meterai.digital"
+      }
+    });
+  </script>
 </body>
 </html>
