@@ -24,14 +24,14 @@ enableEmoji = true
   alertbar = false
 
 [params.social]
-  github = "aksatera"
+  # github = "aksatera"
 
 [markup.goldmark.renderer]
   unsafe = true
 
 ## Main Menu
 [[menu.main]]
-    name = "Blog"
+    name = "Artikel"
     weight = 100
     identifier = "blog"
     url = "/"
