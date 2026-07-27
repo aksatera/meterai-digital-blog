@@ -1,8 +1,9 @@
 ---
 title: "Cara Membeli Kuota e-Meterai di Portal Meterai Digital"
-date: 2025-10-25T23:21:05+07:00
+date: 2025-10-25T16:21:05+07:00
 draft: false
 tags:
+  - e-meterai
   - panduan
   - pembelian
 ---
@@ -17,6 +18,8 @@ Melalui **Meterai Digital**, Anda bisa membeli kuota e-Meterai untuk kebutuhan p
 
 Masuk ke portal **Meterai Digital**, lalu pilih menu **"Pembelian" → "Beli e-Meterai"**. Di halaman ini, tersedia berbagai **paket kuota e-Meterai** — mulai dari **1 keping, 3 keping, 5 keping, hingga 100 keping**.
 
+![Tampilan Paket Pembelian e-Meterai](/images/blog/paket-pembelian-e-meterai.jpeg)
+
 Tampilan Paket Pembelian e-Meterai.
 
 Setiap keping e-Meterai bernilai **Rp10.000** dengan tambahan **biaya layanan Rp2.000 per keping**. Klik tombol **"Beli e-Meterai"** pada paket yang Anda inginkan untuk melanjutkan ke proses pembayaran.
@@ -24,6 +27,8 @@ Setiap keping e-Meterai bernilai **Rp10.000** dengan tambahan **biaya layanan Rp
 ### Langkah 2 — Lakukan Pembayaran via QRIS
 
 Setelah checkout, sistem akan menampilkan **kode QRIS** untuk melakukan pembayaran. Anda dapat memindai QR tersebut menggunakan **aplikasi e-wallet** seperti GoPay, OVO, Dana, ShopeePay, atau melalui **m-banking** (Livin by Mandiri, mBCA, Seabank, dan lainnya).
+
+![Tampilan Checkout Pembelian e-Meterai](/images/blog/checkout-pembelian-e-meterai.jpeg)
 
 Tampilan Checkout Pembelian e-Meterai.
 
@@ -34,6 +39,8 @@ Pastikan nominal sesuai dengan total pesanan Anda. Setelah membayar, klik tombol
 Jika pembayaran berhasil, sistem akan menampilkan notifikasi:
 
 > _"Pembayaran berhasil dilakukan. Kuota berhasil diperbarui."_
+
+![Tampilan Riwayat Pembelian e-Meterai](/images/blog/riwayat-pembelian-e-meterai.jpeg)
 
 Tampilan Riwayat Pembelian e-Meterai.
 
@@ -48,6 +55,8 @@ Halaman struk menampilkan seluruh detail pembelian, termasuk:
 - Item pembelian (e-Meterai)
 - Harga satuan dan biaya layanan
 
+![Tampilan Struk Pembelian](/images/blog/struk-pembelian-e-meterai.jpeg)
+
 Tampilan Struk Pembelian.
 
 Anda dapat menekan tombol **"Download Struk"** untuk mengunduh bukti transaksi. Struk ini berguna untuk dokumentasi bisnis maupun arsip keuangan pribadi.
@@ -56,18 +65,12 @@ Anda dapat menekan tombol **"Download Struk"** untuk mengunduh bukti transaksi. 
 
 Setelah pembayaran diverifikasi, **kuota e-Meterai Anda akan otomatis bertambah.** Tampilan **Beranda** akan menunjukkan total kuota terkini yang siap digunakan.
 
+![Tampilan Beranda Saat Kuota Terupdate](/images/blog/beranda-kuota-terupdate.jpeg)
+
 Tampilan Beranda Saat Kuota Terupdate.
 
 Selanjutnya, Anda bisa langsung menuju menu **Pembubuhan** untuk menempelkan e-Meterai pada dokumen elektronik Anda.
 
-### Kesimpulan
+## Kesimpulan
 
 Melalui **Meterai Digital**, proses pembelian e-Meterai kini bisa dilakukan **kapan saja, di mana saja, dan tanpa antre.** Semua transaksi menggunakan **QRIS**, membuat pembayaran lebih cepat dan aman.
-
-Dengan platform resmi ini, Anda mendapatkan **e-Meterai legal dari Peruri** yang dapat langsung digunakan untuk keperluan:
-
-- Dokumen kontrak dan perjanjian online
-- Keperluan bisnis dan administrasi perusahaan
-- Transaksi hukum dan pembubuhan digital
-
-**Beli e-Meterai resmi sekarang di Meterai Digital** — solusi cepat, aman, dan terpercaya untuk dokumen Anda yang sah secara hukum.
