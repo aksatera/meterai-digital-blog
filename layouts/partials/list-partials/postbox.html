@@ -15,13 +15,13 @@
         </div>
         <div class="card-footer bg-white">
             <div class="wrapfooter">
-                {{if isset .Site.Params "author"}}
+                {{if isset .Site.Params.author "name"}}
                 {{if isset .Site.Params "author_thumb"}}
                     <span class="meta-footer-thumb">
-                    <img class="author-thumb" src="{{ .Site.Params.author_thumb }}" alt="{{ .Site.Params.author }}">
+                    <img class="author-thumb" src="{{ .Site.Params.author_thumb }}" alt="{{ .Site.Params.author.name }}">
                     </span>                
                     <span class="author-meta">
-                    <span class="post-name">{{ .Site.Params.author }}</a></span><br/>
+                    <span class="post-name">{{ .Site.Params.author.name }}</a></span><br/>
                 {{end}}
                 {{end}}
                 <span class="post-date">{{ dateFormat "Jan 2, 2006" .PublishDate }} - {{ .ReadingTime }} min read </span>
