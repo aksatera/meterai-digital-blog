@@ -1,6 +1,6 @@
 ---
 title: "Tips Agar Dokumen Berhasil Dibubuhi e-Meterai Tanpa Kendala"
-date: 2026-07-27T00:00:00+07:00
+date: 2025-12-14T09:32:00+07:00
 draft: false
 author: "Tim Meterai Digital"
 description: "Tips penting agar dokumen PDF berhasil dibubuhi e-Meterai — penyebab gagal, solusi Print to PDF, dan panduan sebelum pembubuhan."
