@@ -2,6 +2,8 @@
 title: "e-Meterai: Pengertian, Fungsi, Cara Pembelian, dan Panduan Pembubuhan"
 date: 2026-07-26T17:00:00+07:00
 draft: false
+author: "Tim Meterai Digital"
+description: "Panduan lengkap e-Meterai — pengertian, fungsi, cara pembelian, dan panduan pembubuhan pada dokumen elektronik."
 tags:
   - info
   - e-meterai

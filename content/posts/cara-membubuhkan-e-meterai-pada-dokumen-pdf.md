@@ -2,6 +2,8 @@
 title: "Cara Membubuhkan e-Meterai pada Dokumen PDF di Portal Meterai Digital"
 date: 2026-07-27T00:00:00+07:00
 draft: false
+author: "Tim Meterai Digital"
+description: "Panduan langkah demi langkah membubuhkan e-Meterai pada dokumen PDF — upload, atur posisi, konfirmasi, cek status, dan verifikasi."
 tags:
   - panduan
   - e-meterai
