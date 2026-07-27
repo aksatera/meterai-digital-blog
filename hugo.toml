@@ -33,8 +33,8 @@ enableEmoji = true
 [[menu.main]]
     name = "Semua Artikel"
     weight = 100
-    identifier = "blog"
-    url = "/"
+    identifier = "artikel"
+    url = "/posts/"
 [[menu.main]]
     name = "Meterai Digital"
     identifier = "meterai"
