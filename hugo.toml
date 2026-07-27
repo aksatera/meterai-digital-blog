@@ -1,6 +1,6 @@
 baseURL = 'https://blog.meterai.digital/'
 languageCode = 'id-ID'
-title = 'Meterai Digital Blog'
+title = 'Artikel Meterai Digital'
 theme = 'mediumish-gohugo-theme'
 summaryLength = 25
 copyright = 'PT Aksatera Teknologi Nusadipa'
@@ -19,7 +19,7 @@ enableEmoji = true
 
 [params.index]
   picture = "/images/logo-meterai-digital.png"
-  title = "Meterai Digital Blog"
+  title = "Artikel Meterai Digital"
   subtitle = "Tutorial & Panduan E-Meterai"
   alertbar = false
 
